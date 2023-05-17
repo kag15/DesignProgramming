@@ -1,0 +1,22 @@
+#svg-canvas  {
+  width: 500;
+  height: 300;
+}
+
+.container {  display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grid-header grid-header"
+      "grid-nav grid-svg";
+  }
+  
+  .grid-svg { grid-area: grid-svg; }
+  
+  .grid-header { grid-area: grid-header; }
+  
+  .grid-nav { grid-area: grid-nav; }
+  
