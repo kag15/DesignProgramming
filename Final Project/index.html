@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Garden of Life</title>
+</head>
+<body>
+    <div class="container">
+        <div id="canvas-parent" class="grid-svg">
+        </div>
+        <div class="grid-header">
+            <h1>Garden Game of Life</h1>
+        </div>
+        <div class="grid-nav">
+            <h3>Background</h3>
+            <p>The universe of the Game of Life is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, live or dead (or populated and unpopulated, respectively).</p> 
+            <h3>Updated Rules</h3>
+            <p>
+                In Garden of Life, we've modified the rules to the following:<br>
+                1. Any live plant with fewer than two live neighbours dies, as if by underpopulation.<br>
+                2. Any live plant with two or three live neighbours lives on to the next generation.<br>
+                3. Any live plant with more than three live neighbours dies, as if by overpopulation.<br>
+                4. Any dead plant with exactly three live neighbours becomes a sprout, as if by reproduction.<br>
+                5. Any sprout with exactly three live neighbours becomes a flower, as if by reproduction.<br>
+                </p>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
